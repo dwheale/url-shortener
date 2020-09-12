@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-let urlSchema = new mongoose.Schema({
+let url = new mongoose.Schema({
   url: String,
   slug: {
     type: String,
@@ -10,4 +10,4 @@ let urlSchema = new mongoose.Schema({
   },
 })
 
-module.exports = mongoose.model('Url', urlSchema)
+module.exports = mongoose.model('Url', url)
